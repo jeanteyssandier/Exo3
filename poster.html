@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML"> </script>
 <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.'>
 <meta name='description' content=''>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/jeanteyssandier/Exo3/master/poster.css">
+<style>
+  .blankspacebottom {
+     margin-bottom: 22px;
+  }
+</style>
+<style>
+  .blankspacetop {
+     margin-top: 20px;
+  }
+</style>
 <style>
 .panel-default > .panel-custom-title {
     background: #bdd7ff; color: #6b523e;
@@ -44,64 +55,116 @@ margin-top:0px;
       </div>
     </div>
   </div>
+
   <div class='row'>
     <div class='col-sm-4'>
       <div class='panel panel-default'>
         <div class='panel-body'>
           <h3 style="color:#bd6130;">Introduction</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>
+            <ul>
+              <li style="margin-bottom: 9px;">Migration in a disc can lead to capture in mean motion resonances (MMR).</li>
+              <li style="margin-bottom: 9px;">Planets in or near MMR produce a strong transit-timing variations (TTV) signal.</li>
+              <li style="margin-bottom: 9px;">We study the signature of planet migration in the TTV signal of a pair of planets in the 2:1 MMR.</li>
+              <li style="margin-bottom: 9px;">We use the K2-24 system as a benchmark.</li>
+            </ul>
+          </p>
         </div>
       </div>
+
+      <div class='panel panel-default'>
+        <div class='panel-body'>
+          <h3 style="color:#bd6130;">K2-24</h3>
+          <p>
+            <ul>
+              <li style="margin-bottom: 9px;"> First reported by <a href="https://ui.adsabs.harvard.edu/abs/2016ApJ...818...36P/abstract" target="_blank">Petigura et al. (2016)</a>, then refined with TTVs by <a href="https://ui.adsabs.harvard.edu/abs/2018AJ....156...89P/abstract" target="_blank">Petigura et al. (2018)</a>. </li>
+              <li style="margin-bottom: 9px;"> Two planets at 20.9 and 42.3 days (period ratio 2.028), with masses 19 and \(15 M_{\oplus}\) , and non-zero eccentricities. </li>
+              <li style="margin-bottom: 9px;"> TTV period of 1580 days, and amplitude of 0.25 and 0.40 days. </li>
+              <li style="margin-bottom: 9px;"> Possible third planet: \(54 M_{\oplus}\) at 1.15 au. </li>
+            </ul>
+            <p><img src='https://raw.githubusercontent.com/jeanteyssandier/Exo3/master/petigura_fig7_crop.png' width='100%' height='auto'></p>
+            <p><img src='https://raw.githubusercontent.com/jeanteyssandier/Exo3/master/petigura_fig5_crop.png' width='100%' height='auto'></p>
+            <p> <span style="font-size:16px"><em> Fig.1: Eccentricities (top) and TTVs (bottom) of K2-24, from <a href="https://ui.adsabs.harvard.edu/abs/2018AJ....156...89P/abstract" target="_blank">Petigura et al. (2018)</a>.</em></span></p>
+          </p>
+        </div>
+      </div>
+
       <div class='panel panel-default'>
         <div class='panel-body'>
           <h3 style="color:#bd6130;">Model</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          <p><img src='https://www.nasa.gov/sites/default/files/14-111-kepler_0.jpg' width='100%' height='auto'></p>
-          <p class='small'><em>Figure 1: Exoplanet artist impression. Credit: NASA</em></p>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>
+            <ul>
+            <li style="margin-bottom: 9px;"> We use the <a href="https://ui.adsabs.harvard.edu/abs/2012A%26A...537A.128R/abstract" target="_blank">Rebound code</a>, with extra forces to simulate disc-driven migration and eccentricity damping. </li>
+            <li style="margin-bottom: 9px;"> We use the <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...894...59K/abstract" target="_blank"> Kanagawa and Szuszkiewicz (2020)</a> model for the damping terms. </li>
+            <li style="margin-bottom: 9px;"> We use the work of <a href="https://ui.adsabs.harvard.edu/abs/2012ApJ...761..122L/abstract" target="_blank"> Lithwick et al. (2012) </a> to interpret TTVs. </li>
+          </ul>
+        </p>
         </div>
       </div>
     </div>
+
     <div class='col-sm-4'>
       <div class='panel panel-default'>
         <div class='panel-body'>
-          <h3 style="color:#bd6130;">Results</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-          <p><a href='https://tess.mit.edu/publications/' target='_blank'>
-            <img src='https://tess.mit.edu/wp-content/uploads/wasp-18b-as-1024x743.png' width='100%' height='auto'></a></p>
-          <p class='small'><em>Figure 2: TESS light curve. Credit: MIT</em></p>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p><iframe width='100%' height='auto' src="https://www.youtube.com/embed/EAIUJaaVJ9U">
-          </iframe></p>
-          <p class='small'><em>Movie 1: CHEOPS advertisement. Credit: ESA</em></p>
+          <h3 style="color:#bd6130;"> TTVs from disc migration </h3>
+          <p> &#8226; Disc-driven migration can form pair of planets in the 2:1 MMR with the same period ratios as K2-24.  </p>
+          <p><img src='https://raw.githubusercontent.com/jeanteyssandier/Exo3/master/mig_flare_1_run92.png' width='103%' height='auto'></p>
+          <p><span style="font-size:16px"><em> Fig.2: Migration and capture in the 2:1 MMR of two planets with same masses as K2-24b and c. The final periods and period ratio are the same as the observed ones, but eccentricities are too small.</em></span></p>
+          <p><span style="font-size:16px">  &#9824; <a href='https://raw.githubusercontent.com/jeanteyssandier/Exo3/master/run92_tv.png' target="_blank">Click here </a> to display the TTV computed at the end of that simulation. There period is correct but their amplitudes are 20 times smaller than the observed ones.</span></p>
+          <p class='blankspacetop'> &#8226; We can then compute the TTV of an ensemble of resonant systems formed by disc migration.  </p>
+          <p><img src='https://raw.githubusercontent.com/jeanteyssandier/Exo3/master/TTV_all_sims.png' width='103%' height='auto'></p>
+          <p><span style="font-size:16px"><em> Fig.3: TTV period versus amplitude for an ensemble of simulations with planets similar to K2-24b and, but with different disc properties. None of them can match the observed TTVs of K2-24.</em></span></p>
+          <p class='blankspacebottom'> &#8226; None of the simulations match the observed TTVs of K2-24. </p>
+          <p><span style="font-size:16px"> &#9824; Wondering why the linear scaling between TTV period and amplitude? <a href='https://nicesite.com' target="_blank">Click here !</a>  </span></p>
+          <p class='blankspacebottom'> </p>
         </div>
       </div>
     </div>
+
     <div class='col-sm-4'>
       <div class='panel panel-default'>
         <div class='panel-body'>
-          <h3 style="color:#bd6130;">Discussion</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3 style="color:#bd6130;"> Increasing the eccentricities and TTVs </h3>
+          <p>
+            <ul>
+              <li style="margin-bottom: 10px;"> The eccentricities (and TTV amplitudes) that we obtained with disc migration are too small. </li>
+              <li style="margin-bottom: 10px;"> <a href="https://ui.adsabs.harvard.edu/abs/2018AJ....156...89P/abstract" target="_blank">Petigura et al. (2018)</a> reported the possible detection of a third planet (\(54 M_{\oplus}\) at 1.15 au)</li>
+              <li style="margin-bottom: 10px;"> We assume that all three planets have cleared an inner cavity and or no longer migrating. </li>
+              <li style="margin-bottom: 10px;"> However the gravitational torque from the disc still causes the planets to precess (<a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.490.4353T/abstract" target="_blank"> see Teyssandier and Lai 2019 for details</a>).  </li>
+              <li style="margin-bottom: 10px;"> As the disc evaporates over time, change in precession rates cause crossing of secular resonances, and hence eccentricity excitation (<a href="https://ui.adsabs.harvard.edu/abs/2011ApJ...739...31L/abstract" target="_blank"> see Lithwick and Wu 2011 for details</a>). </li>
+            </ul>
+          </p>
+          <p><img src='https://raw.githubusercontent.com/jeanteyssandier/Exo3/master/reruns_run207_rerun_hr.png' width='100%' height='auto'></p>
+          <p><span style="font-size:16px"><em> Fig.4: Excitation of the eccentricities of K2-24b and c by an outer planet and an evaporating disc.</em></span></p>
+          <p class='blankspacetop'> &#8226; We can now compute the TTVs. </p>
+          <p><img src='https://raw.githubusercontent.com/jeanteyssandier/Exo3/master/run207_tv.png' width='97%' height='auto'></p>
+          <p><span style="font-size:16px"><em> Fig.5: TTVs obtained at the end of that simulation. Both their amplidute and period match the observations.</em></span></p>
+          <p><span style="font-size:16px"> &#9824; <a href='https://raw.githubusercontent.com/jeanteyssandier/Exo3/master/disc_3p_new4_run207Z.png' target="_blank"> Click here </a> to see how the trajectory in the \(Z_{\rm free}\) complex plane matches the observations!</span></p>
+          <p> &#8226; This mechanism reproduces all the observed properties of K2-24 (orbital period ratios, eccentricities, TTVs).  </p>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='col-sm-12'>
       <div class='panel panel-default'>
         <div class='panel-body'>
           <h3 style="color:#bd6130;">Conclusion</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-      <div class='panel panel-default'>
-        <div class='panel-body'>
-          <h4>References</h4>
-          <p class='small'>
-            Mayor, M. &amp; Queloz, D., Nature 378, 355 (1995), <a href='https://ui.adsabs.harvard.edu/abs/1995Natur.378..355M/abstract' target='_blank'>ADS</a><br>
-            Wolszczan, A. &amp; Frail, D. A., Nature 355, 145 (1992), <a href='https://ui.adsabs.harvard.edu/abs/1992Natur.355..145W/abstract' target='_blank'>ADS</a><br>
-            Struve, O., The Observatory, 72, 199 (1952), <a href='https://ui.adsabs.harvard.edu/abs/1952Obs....72..199S/abstract' target='_blank'>ADS</a><br>
+          <p>
+            <ul>
+              <li> Disc migration leaves an inprint in the TTVs of resonant pairs of planets. </li>
+              <li> Disc migration alone could not reproduce the TTVs of K2-24, although it could reproduce its orbital period ratio. </li>
+              <li> We found a possible scenario where a third planet and an evporating disc excite the eccentricities and reproduce the right TTV amplitude, period, and the orbital period. </li>
+              <li> If this scenario really happened, then it predicts that the putative third planet indeed exists, and is moderately eccentric (~0.25).</li>
+              <li> Paper submitted to A&A ! </li>
+            </ul>
           </p>
         </div>
       </div>
     </div>
   </div>
+
 </div>
 </body>
 </html>
